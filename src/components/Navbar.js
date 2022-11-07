@@ -19,9 +19,14 @@ const Navbar = () => {
   };
   return (
     <nav>
+      <div class="branding">
+        <div class="logo">
+      <img src="https://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Messages-icon.png"></img>
+      </div>
       <h3>
         <Link to="/">ReChat</Link>
       </h3>
+      </div>
       <div>
         {user ? (
           <>
