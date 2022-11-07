@@ -3,17 +3,12 @@
 }
 
 :root {
-  --color-1: white;
+  --color-1: #f0f2f5;
   --color-2: black;
-  --color-3: #00DB26;
+  --color-3: #00db26;
   --color-4: grey;
   --color-5: #eb4034;
   --color-6: #0084ff;
-}
-
-body{
-  background-color: white;
-  color: black;
 }
 
 /* Navbar */
@@ -24,8 +19,25 @@ nav {
   height: 70px;
   padding: 0px 20px;
   background-color: var(--color-1);
-  border-bottom: 1px solid grey;
+  border-bottom: .5px solid grey;
 }
+
+.branding{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo{
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  max-height: 80%;
+}
+
 nav a {
   color: var(--color-2);
   text-decoration: none;
@@ -66,7 +78,7 @@ section .form {
   padding: 10px;
   outline: none;
   margin-top: 10px;
-  border: 1px solid var(--color-6);
+  border: 1px solid #60f778;
   border-radius: 5px;
 }
 .btn_container {
@@ -74,10 +86,9 @@ section .form {
   text-align: center;
 }
 .btn {
-  
   background-color: white; 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 2px solid #60f778;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
@@ -88,7 +99,7 @@ section .form {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #4CAF50;
+  background-color: #60f778;
   color: white;
 }
 .error {
@@ -143,7 +154,7 @@ section .form {
   width: 100vw;
 }
 .users_container {
-  border-right: 2px solid grey;
+  border-right: .5px solid grey;
   overflow-y: auto;
 }
 .user_wrapper {
@@ -154,6 +165,7 @@ section .form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(231, 231, 231);
 }
 .user_detail {
   display: flex;
@@ -186,7 +198,6 @@ section .form {
 .messages_user {
   padding: 6px;
   text-align: center;
-  border-bottom: 1px solid grey;
 }
 .no_conv {
   font-size: 20px;
@@ -216,7 +227,10 @@ section .form {
   height: calc(100vh - 200px);
   overflow-y: auto;
   border-bottom: 1px solid grey;
-  padding: 20px
+  padding: 20px;
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  url(wall.png);
 }
 .message_wrapper {
   margin-top: 5px;
@@ -248,7 +262,7 @@ section .form {
   background: var(--color-6);
 }
 .selected_user {
-  background: rgb(199, 199, 199);
+  background: #f0f2f5;
 }
 .truncate {
   font-size: 14px;
