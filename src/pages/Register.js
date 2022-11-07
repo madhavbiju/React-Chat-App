@@ -30,7 +30,7 @@ const Register = () => {
     try {
       const result = await createUserWithEmailAndPassword(
         auth,
-        email,
+        email+"@gmail.com",
         password
       );
       await setDoc(doc(db, "users", result.user.uid), {
@@ -61,9 +61,9 @@ const Register = () => {
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div className="input_container">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Phone Number</label>
           <input
-            type="text"
+            type="number"
             name="email"
             value={email}
             onChange={handleChange}
